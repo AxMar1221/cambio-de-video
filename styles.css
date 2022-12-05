@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    font-family: 'Marhey', sans-serif
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 1620px;
+    width: 1080px;
+}.videos{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s ease all;
+    opacity: 1;
+}
+.videos video{
+    width: 100%;
+    height: 1620px;
+    object-fit: cover;
+}
+footer{
+    height: 300px;
+    font-size: 45px;
+    width: 1080px;
+    background-size: 95px;
+}
+table {
+    width: 1080px;
+    height: 120px;
+    color: blueviolet;
+    display: flex;
+    justify-content: center; 
+    border-collapse: collapse;
+    padding-top: 35px;
+}
+th {
+    text-align: center;
+    padding: 2px;
+}
+td {
+    text-align: center;
+    padding: 2px 25px;
+}
