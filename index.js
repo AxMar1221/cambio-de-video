@@ -40,9 +40,9 @@ function showVid3(){
     }, 300);
 }
 
-// let totalWomen = document.getElementById('count-women')
-// let totalMen = document.getElementById('count-men')
-// let mostDif = document.getElementById('most')
+let totalWomen = document.getElementById('count-women')
+let totalMen = document.getElementById('count-men')
+let mostDif = document.getElementById('most')
 
 const counter = 'http://3.140.212.226:5003/countpeople'
 
@@ -51,14 +51,14 @@ fetch( counter )
     .then( data => {
         console.log(data)
 
-        // let totalW = data.mujeres; totalWomen.textContent = totalW;
-        // let totalM = data.hombres; totalMen.textContent = totalM;
+        let totalW = data.mujeres; totalWomen.textContent = totalW;
+        let totalM = data.hombres; totalMen.textContent = totalM;
 
         if (data.mujeres > data.hombres ){
-            // let mostWomen = 'mujeres'; mostDif.textContent = `Hay más ${mostWomen}`;
+            let mostWomen = 'mujeres'; mostDif.textContent = `Hay más ${mostWomen}`;
             videoBase.src = showVid1()
         } else if (data.mujeres < data.hombres) {
-            // let mostMen = 'hombres'; mostDif.textContent = `Hay más ${mostMen}`;
+            let mostMen = 'hombres'; mostDif.textContent = `Hay más ${mostMen}`;
             videoBase.src = showVid2()
         } else {
             videoBase.src = showVid3()
